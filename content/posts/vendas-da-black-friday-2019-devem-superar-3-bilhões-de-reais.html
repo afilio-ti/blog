@@ -29,11 +29,36 @@ title = "Vendas da Black Friday 2019 devem superar 3 bilhões de reais "
 <p>A economia feita ao longo do ano para aproveitar a Black Friday não vai atingir só quem deseja comprar produtos para si mesmo. 44% dos consumidores entrevistados pela Ebit disseram que vão pegar carona nas promoções da data para adiantar as compras de Natal, o que representa aumento de 3% em relação aos que deram a mesma reposta em 2018.</p>
 <h3>Produtos com maiores intenções de compra</h3>
 Neste ano, a categoria com maior intenção de compra é a de eletrônicos, enquanto artigos esportivos e games detêm menos de 15% da preferência dos consumidores. Confira os dez segmentos de produtos mais buscados nesta Black Friday:
-COLOCAR GRÁFICO AQUI
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body align=center>
+    <svg class="bar-chart"></svg>
+<script src="https://cdn.jsdelivr.net/npm/chart.xkcd@1.1/dist/chart.xkcd.min.js"></script>
+<script>
+  const svg = document.querySelector('.bar-chart')
+
+const barChart = new chartXkcd.Bar(svg, {
+  title: 'Segmentos de produtos mais procurados na Black Friday 2019', // optional
+  xLabel: 'categorias mais procuradas', // optional
+  yLabel: 'percentual de interesse (%)', // optional
+  data: {
+    labels: ['eletrônicos', 'eletrodomésticos', 'telefonia/celulares', 'informática', 'moda/acessórios', 'casa/decoração', 'cosméticos/perfumaria', 'livros','esporte/lazer','games'],
+    datasets: [{
+      data: ['41', '35', '28', '26', '25', '24', '21', '15', '12', '12'],
+    }],
+  },
+  options: { // optional
+    yTickCount: 10,
+  },
+});
+
+</script>
+  </body>
+</html>
 <p>Se você tem um e-commerce e quer aumentar suas vendas e conversões com afiliados, temos diversos formatos para melhorar sua performance! <a href="http://www.afilio.com.br/cadastro-afiliado.html" target="_blank">Clique aqui</a> para saber mais e se cadastrar.</p>
 <p><em>*Cabe ressaltar que cada entrevistado pôde escolher mais de uma resposta para a pergunta de intenção de compra
 * A pesquisa citada na matéria foi realizada em setembro com consumidores que fizeram compras online em lojas conveniadas à Ebit|Nielsen, e que têm cadastro verificado com informações oficiais.</em></p>
-
-
-
-
